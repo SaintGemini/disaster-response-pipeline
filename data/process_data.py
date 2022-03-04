@@ -64,11 +64,21 @@ def clean_data(df):
     df.drop_duplicates(inplace=True)
     df = df.dropna(axis=0, subset=category_colnames)
     
+    # converts related column to binary
+    df['related'] = np.where((df['related'] == 2), 1, df['related'])
+    
     return df
 
 def save_data(df, database_filename):
+    '''
+    Save data to a SQLite database.
+
+    INPUT:
+    df - dataframe to save in database
+    database_filename - string to use as database name
+    '''
     engine = create_engine('sqlite:///{}'.format(database_filename))
-    df.to_sql('ResponseMessages', engine, index=False)  
+    df.to_sql('ResponseMessages', engine, index=False, if_exists='replace')  
 
 
 def main():

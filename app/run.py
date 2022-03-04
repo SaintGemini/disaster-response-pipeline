@@ -20,6 +20,10 @@ from sqlalchemy import create_engine
 app = Flask(__name__)
 
 def tokenize(text):
+    '''
+    Tokenize message, remove punctuation and stopwords, lemmatize each token
+    and return new string.
+    '''
     lemm = WordNetLemmatizer()
     words = word_tokenize(text)
     words = [w for w in words if w not in string.punctuation]
