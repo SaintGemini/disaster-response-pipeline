@@ -20,8 +20,8 @@ it is given under certain disaster categories.
 4. Click the `PREVIEW` button to open the homepage
 
 ### Files in Repository
-* app \n
-| - templates
+* app 
+<br>| - templates
 || - master.html                # home page of web app
 || - go.html                    # results page showing predicted classification
 
