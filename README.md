@@ -22,15 +22,15 @@ it is given under certain disaster categories.
 ### Files in Repository
 * app 
 <br>| - templates
-|| - master.html                # home page of web app
-|| - go.html                    # results page showing predicted classification
+<br>|| - master.html                # home page of web app
+<br>|| - go.html                    # results page showing predicted classification
 
 * data
-| - disaster_categories.csv     # data to be processed
-| - disaster_messages.csv       # data to be processed
-| - process_data.py             # python script that cleans data and saves to SQL database
-| - DisasterResponse.db         # SQL database genereated from process_data.py
+<br>| - disaster_categories.csv     # data to be processed
+<br>| - disaster_messages.csv       # data to be processed
+<br>| - process_data.py             # python script that cleans data and saves to SQL database
+<br>| - DisasterResponse.db         # SQL database genereated from process_data.py
 
 * models
-| - train_classifier.py         # python script that trains ML model and saves to pickle file 
-| - classifier.pkl              # ML model saved as pickle file
+<br>| - train_classifier.py         # python script that trains ML model and saves to pickle file 
+<br>| - classifier.pkl              # ML model saved as pickle file
