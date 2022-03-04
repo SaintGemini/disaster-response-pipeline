@@ -24,6 +24,7 @@ it is given under certain disaster categories.
 <br>| - templates
 <br>|| - master.html                # home page of web app
 <br>|| - go.html                    # results page showing predicted classification
+<br>| - run.py                      # python script that runs flask app
 
 * data
 <br>| - disaster_categories.csv     # data to be processed
